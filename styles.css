@@ -12,7 +12,7 @@ body {
 
 
 .imgPerfil img{
-    width: 10%;
+    width: 40px;
     align-items: center;
     border-radius: 100%;
     display: grid;
@@ -20,6 +20,6 @@ body {
 }
 
 .presentacion {
-    margin: 0 30%;
+    margin: 0 40px;
     text-align: center;
 }
