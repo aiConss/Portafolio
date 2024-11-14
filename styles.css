@@ -1,0 +1,25 @@
+
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background: -webkit-linear-gradient(90deg, #000000,#030032);
+    background: linear-gradient(90deg, #000000,#030032);
+    font-weight: 800;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.imgPerfil img{
+    width: 10%;
+    align-items: center;
+    border-radius: 100%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.presentacion {
+    margin: 0 30%;
+    text-align: center;
+}
