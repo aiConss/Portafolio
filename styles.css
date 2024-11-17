@@ -1,26 +1,152 @@
 
+body, html {
+    overflow-x: hidden ;
+}
 
 body {
     font-family: 'Sour Gummy', sans-serif;
     background: -webkit-linear-gradient(90deg, #000000,#030032);
     background: linear-gradient(90deg, #000000,#030032);
-    font-weight: 800;
+    font-weight: 700;
     color:white;
     font-size: 30px;
     text-align: center;
+
 }
+a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 10;
 
-
+}
+ul {
+    list-style-type: disc;  
+    margin-left: 0;        
+    padding-left: 0; 
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .imgPerfil img{
-    width: 120px;
-    height: auto;
+    width: 5em;
     align-items: center;
     border-radius: 100%;
     display: grid;
     margin: 0 auto;
+    box-shadow: 
+    0 0 8px  rgba(68, 0, 215, 0.3),
+    0 0 8px  rgb(9, 131, 213),
+    0 0 8px  rgb(255, 255, 255),
+    0 0 8px  rgb(251, 0, 255);
 }
-
 .presentacion {
-    margin: 0 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+
+}
+.contenedorInfo {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+}
+.sobreMi, .contacto {
+    border: 1px solid white;
+    
+    flex-basis: 45%;
+    min-height: 400px;
+    background-color: rgb(6, 17, 50, );
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 1em;
+    box-shadow: 
+    8px 8px 8px rgba(215, 0, 172, 0.3),
+    8px 8px 8px rgba(170, 8, 138, 0.3),
+    8px 8px 8px rgba(255, 255, 255, 0.3),
+    8px 8px 8px rgba(251, 0, 2550, 0.3);
+
+}
+.sobreMi {
+    flex-grow: 1;
+}
+.contacto{
+    flex-grow: 1;
+    height: 400px;
+    width: auto;
+    overflow: auto;
+}
+.sobreMi li {
+    font-weight: 500;
+    font-size: 25px;
+    text-align:left;
+    margin: 0 1.5em;
+}
+.contacto h3{
+    font-size: 1.5em;
+}
+.sobreMi p {
+    font-weight: 500;
+    font-size: 25px;
+    text-align:left;
+    margin: 0 1.5em;
+}
+.toggleButton1{
+    display: inline-block;
+    border: 1px solid rgb(117, 117, 117);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 10px;
     text-align: center;
+    position: relative;
+    z-index: 10;
+
+}
+.toggleButton {
+    display: inline-block;
+    border: 1px solid rgb(117, 117, 117);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    
+}
+.toggleButton:hover {
+    background-color: rgb(6, 17, 50, );
+    box-shadow: 
+    0 0 8px  rgba(68, 0, 215, 0.3),
+    0 0 8px  rgb(9, 131, 213),
+    0 0 8px  rgb(255, 255, 255),
+    0 0 8px  rgb(251, 0, 255);
+}
+.toggleButton1:hover {
+    background-color: rgb(6, 17, 50, );
+    box-shadow: 
+    0 0 8px  rgba(68, 0, 215, 0.3),
+    0 0 8px  rgb(9, 131, 213),
+    0 0 8px  rgb(255, 255, 255),
+    0 0 8px  rgb(251, 0, 255);
+}
+ul {
+    list-style-type: disc;
+    margin-left: 0;
+    padding-left: 0;
+    display: none;
+    max-height:0 ;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+ul.visible {
+    max-height: 1000px;
+    display: block;
 }
