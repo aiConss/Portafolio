@@ -6,16 +6,74 @@
     <title>AICons</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+    @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+
+
 </head>
 <body>
+    <canvas id="snow" width="100%" height="100%"></canvas>
+    <script src="script.js"></script>
     <br>
-    <div class="imgPerfil"><img src="img/imgPerfil.png"><br></div>
 
-    <div class="presentacion">Bienvenidos, soy AICons. Un estudiante de Computacion, amante de la tecnologia y de todo lo que funcione con 1s y 0s.<br><br></div>
+    <div class="imgPerfil"><img src="img/imgPerfil.png"></div>
 
-    
-    
+    <div class="presentacion">
+        <h3>
+            AICons.<br> Un estudiante del IPN en el área de Computacion, amante de la tecnologia y de 
+            todo lo que funcione con 1s y 0s :) .<br><br>
+        </h3>
+    </div>
+    <div class="contenedorInfo">
+        <div class="sobreMi">
+            <h2>Sobre Mí</h2>
+            <h3 class="toggleButton" onclick="toggleSection('quienSoy')">¿Quién Soy?</h3>
+            <ul id="quienSoy">
+                <p>
+                    Hola, soy Alejandro Sánchez, estudiante del Centro de Estudios Científicos y Tecnológicos Número 3 "Estanislao Ramírez Ruiz". Nací en 2008 y desde los 10 años descubrí mi pasión por la tecnología y la informática. Actualmente estoy cursando la carrera Técnica en Computación en el CECyT 3. Me considero una persona que disfruta de los retos y mejorar sus habilidades en el campo de la tecnología. En el futuro, planeo estudiar Ingeniería en Inteligencia Artificial. Estoy abierto a nuevas oportunidades que me permitan crecer en este apasionante campo.
+                </p><br>
+            </ul>
+
+            <br><br>
+        
+            <h3 class="toggleButton1" onclick="toggleSection('quePuedoHacer')">¿Qué Hago?</h3>
+            <ul id="quePuedoHacer">
+                <p>Actualmente, puedo trabajar en:</p>
+                <br>
+                <li>Proyectos de desarrollo de software</li>
+                <li>Desarrollo web</li>
+                <li>Diseño de interfaces de usuario</li>
+                <li>Edición de contenido multimedia (audio, videos e imágenes)</li>
+                <li>Diseño de redes sociales</li>
+                <li>Creación de logos</li>
+                <li>Entre otras áreas relacionadas</li>
+            </ul>
+            <br><br>
+            Si quieres trabajar conmigo, no dudes en contactarme.
+        </div>
+        
+        <div class="contacto">
+            <h3>
+                Contactame
+            </h3>
+                <a href="https://www.facebook.com/profile.php?id=100071523256650">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+                <br><br>
+                <a href="https://wa.me/7225833579">
+                    <i class="fab fa-whatsapp"></i>
+                    Whatsapp
+                </a>
+                <br><br>
+                <a href="https://www.instagram.com/alex.sxsc/">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <br><br>
+        
+        </div>
+    </div>
 </body>
 </html>
